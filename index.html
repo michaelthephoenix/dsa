@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+
+
+  <title>DSA</title>
+</head>
+
+<body>
+  <!-- page content -->
+
+  <!-- nav-bar -->
+  <nav class="navbar header-top fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/index.html">Data Structure & Algorithms</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText" >
+      <ul class="navbar-nav animate side-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/textbooks.html" title="Dashboard"><i class="fas fa-cube"></i> Textbooks<i
+              class="fas fa-cube shortmenu animate"></i></a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#services" title="Dashboard"><i class="fas fa-cube"></i> Lectures<i
+              class="fas fa-cube shortmenu animate"></i></a>
+        </li> -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Lectures
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="/alg-analysis.html">Algorithm Analysis</a>
+            <a class="dropdown-item" href="/recursion.html">Recursion & Induction</a>
+            <a class="dropdown-item" href="/fundamentals.html">Fundamentals of Data Structures</a>
+            <a class="dropdown-item" href="/searching.html">Searching</a>
+            <a class="dropdown-item" href="/sorting.html">Sorting Algorithms</a>
+            <a class="dropdown-item" href="/graphs.html">Graphs</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about-us" title="Cart"><i class="fas fa-cart-plus"></i> About<i
+              class="fas fa-cart-plus shortmenu animate"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#the-contact-form" title="Comment"><i class="fas fa-comment"></i> Contact Us <i
+              class="fas fa-comment shortmenu animate"></i></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- <div class="page-content"> -->
+    <div class="page-container">
+      <div class=" " id="my-intro">
+        <div id="intro">
+          <div class="jumbotron ">
+            <div class="container">
+              <h1 class="display-4">Introduction</h1>
+              <p class="lead">Data Structures are the programmatic way of storing data so that data can be used
+                efficiently.
+                Almost every enterprise application uses various types of data structures in one or the other way.
+                Data structures have gained significant importance because of their usage in several disciplines.
+                Data structures are integral part of modern operating systems, compilers, database Management systems,
+                data communications and so on</p>
+              <p>Algorithm is a step-by-step procedure, which defines a set of instructions to be executed in a certain
+                order to get the desired output.
+                Algorithms are generally created independent of underlying languages,
+                i.e. an algorithm can be implemented in more than one programming language.</p>
+              <p>
+                Examples of data structure include Arrays, stack, queues, linked lists,
+                hash tables e.t.c which are used to store data in an organized way such that it can be used efficiently.
+
+                Examples of algorithms may include searching algorithms, sorting algorithms, divide and conquer, back
+                tracking,
+                greedy algorithms e.t.c which can operate on the data structures in order to produce results.
+              </p>
+              <p>
+                Algorithms together with data structures have wide spread use in several applications.
+                These include: image processing, digital signal processing, simulation, numerical computations,
+                cryptography,
+                data compressions and genetic studies.
+
+                This means that data structure and algorithms are closely related. The data structure you choose
+                directly affect
+                the algorithm that will be used and vice versa.
+              </p>
+
+              <b>Algorithm + Data structure = Program</b>
+
+              </p>
+              <img src="dsa_img.JPG" class="responsive-img" alt="dsa image one" srcset="">
+              <p>
+              <h3>Why study data structures and Algorithms</h3>
+              Understanding data structures and algorithms might seem unnecessary in an age where you'll be using
+              library
+              functions for 90% of your coding.
+              Why then should you bother to learn the implementation, when the implementation is hidden from you behind
+              an abstraction?
+              </p>
+              <p>
+                You must learn data structures and algorithms, so that you understand the logic behind the behaviour of
+                these abstractions.
+                If you don't, you will eventually apply them in a way that will hurt you.
+              </p>
+              <p>
+                Understanding algorithms lets you understand the problems those algorithms were built to overcome.
+                That understanding will help you immensely in your dat-to-day Work, because those problems are basic
+                logic and computer science problems that pop up everywhere,
+                no matter if you're working on business software, hardware drivers, games or mobile apps.
+              </p>
+              <p>
+                A video below explains why data structure arose despite existence of in-built data types and algorithm.
+                feel free to download and watch it for more understanding of the course.
+              </p>
+              <iframe class="responsive-iframe" src="https://www.youtube.com/embed/YWnBbNj_G-U"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+              <h3>Lecture content</h3>
+              <p>download or copy lecture 1:<a href="https://muele.mak.ac.ug/mod/resource/view.php?id=45923"
+                  target="_blank" rel="noopener noreferrer">
+                  Lecture 1: Introduction to Data Structures and Algorithms</a>
+              </p>
+              <p>
+                Zoom Recordings:
+              </p>
+              <p>
+                <a href="https://zoom.us/rec/share/NcZSYatR3lts8IlYj6zKBVLLKFfAj_nNowlLC3fX8SZWmm2lXdO0AOfrtIo3pmn5.oInwi_vEBzAIAT8y"
+                  target="_blank" rel="noopener noreferrer">Zoom lecture 1.0</a>
+                Passcode: qZ$kE2J7
+              </p>
+              <p>
+                <a href="https://zoom.us/rec/share/iMaVcInoquVcKRledZVhXBvwhlnYcRzER3W6tCOONBdxiVVzI-stuAl519xyBvdR.Q6CtfPQ1-fMqbrU2"
+                  target="_blank" rel="noopener noreferrer">Zoom lecture 1.2</a> Passcode: %7EV47wQ
+              </p>
+              <p>
+                <a href="https://zoom.us/rec/share/HgIpckpvFgHR-YXneqdGdK-tHipHtNOrNmjg4IQ-7csv0yD1zdb-gDbvZPn7kyzV.gAHLniMDwuHc3J9I"
+                  target="_blank" rel="noopener noreferrer">Zoom lecture 1.3</a> Passcode: v#JQA%x5
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- algorithm analysis -->
+      <!-- <div class="jumbotron">
+        <h1 class="display-4">Algorithm Analysis</h1>
+        <p class="lead">An algorithm is a finite sequence of instructions, each of which has a clear meaning and can be
+          performed with a
+          finite amount of effort in a finite length of time.</p>
+        <hr class="my-4">
+        <p>This is due to the following factors:</p>
+        <li>
+          Unambiguous − Algorithm should be clear and unambiguous.
+          Each of its steps (or phases), and their inputs/outputs should be clear and must lead to only one meaning.
+        </li>
+        <li>
+          Input − An algorithm should have 0 or more well-defined inputs.
+        </li>
+        <li>
+          Output − An algorithm should have 1 or more well-defined outputs, and should match the desired output
+        </li>
+        <li>
+          Finiteness − Algorithms must terminate after a finite number of steps.
+        </li>
+        <li>
+          Independent − An algorithm should have step-by-step directions, which should be independent of any programming
+          code.
+        </li>
+        <p>
+          Algorithms can be developed for solving same problem.
+          The question is deciding which Algorithm can be chosen as the best algorithm for problem solving.
+          Many programmers think that the best algorithm is one which executes for a shortest period of time.
+          This can be true to a less extent, as it is had to know why it executed for such shorter period.
+          May be the program was small, the machine specification onto which the program executed was high and so on.
+        </p>
+        <p>
+          Performance analysis is required in order to measure the efficiency and effectiveness of a particular
+          algorithm.
+          This can be done using the empirical/experimental approach and analytical method.
+        </p>
+        <p>download or copy lecture 2:
+          <a href="https://muele.mak.ac.ug/mod/resource/view.php?id=46198" target="_blank"
+            rel="noopener noreferrer">Lecture 2 : Algorithm Analysis</a>
+        </p>
+        <p>
+          Zoom Recordings:
+        </p>
+        <p>
+          <a href="https://zoom.us/rec/share/zCaQiIauuZSTvkkNY-wxC-jsnmRkIWxX9VUjQgj0ffPQZMLuEbrqEwhbUZoidj5A.HQUJbGjT6mrhfZxX"
+            target="_blank" rel="noopener noreferrer">
+            Zoom Lecture 2.0</a> Passcode: Vc76El7?
+        </p>
+        <p>
+          <a href="https://zoom.us/rec/share/cDlclSEwiA7iUzy41dQEH-oPciFP2UMofMbH0deZ-UZCIclZgTPmIEwvJ_7cQ0Ji.f49i4bUGpdoVgyLF"
+            target="_blank" rel="noopener noreferrer">
+            Zoom Lecture 2.1</a> Passcode: %q@CmvG3
+        </p>
+        <p>
+          <a href="https://zoom.us/rec/share/XoI4X0S3hQt-PALW9krDzw0IM4Z3UfJfPezP_3lotmyYjtSaGRAZjV6bpJygNg.xWijKsao6OYnNwr6"
+            target="_blank" rel="noopener noreferrer">
+            Zoom Lecture 2.2</a> Passcode: 6Kn!&Zqg
+        </p>
+        <p>
+          <a href="https://zoom.us/rec/share/tlqy9raZl7s_1QRawkLT27uroICw8qJw2y_UKEmP74G3IDdP3n37h5yW1tHzDQnL.p0OgzKRhbCDVCc9N"
+            target="_blank" rel="noopener noreferrer">
+            Zoom Lecture 2.3</a> Passcode: +6*+M6T@
+        </p>
+      </div> -->
+      <!-- algorithm analysis -->
+
+
+      <!-- recurssion induction -->
+
+      <!-- <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Recursion</h1>
+          <p class="lead">Some computer programming languages allow a module or function to call itself.
+            This technique is known as recursion. In recursion, a function α either calls itself directly or calls a
+            function β that in turn calls the original function α.
+            The function α is called recursive function.</p>
+          <h3>
+            Properties
+          </h3>
+          <li>
+            Base criteria − There must be at least one base criteria or condition, such that,
+            when this condition is met the function stops calling itself recursively.
+          </li>
+          <li>
+            Base criteria − There must be at least one base criteria or condition,
+            such that, when this condition is met the function stops calling itself recursively.
+          </li>
+          <p>
+            Download or copy lecture slides: <a href="https://muele.mak.ac.ug/mod/resource/view.php?id=46387"
+              target="_blank" rel="noopener noreferrer">Lecture 3: Recursion</a>
+          </p>
+          <p>
+            Zoom Recordings
+          </p>
+          <p>
+            <a href="https://zoom.us/rec/share/3uUUSO8V2viNRsKbf7ljkybyCcqQvi4FmA40F8EKl6-WiqTcjOTfcQ0r4KRnamab.QmnIbLd0Au0ETjkR"
+              target="_blank" rel="noopener noreferrer">
+              Zoom lecture 3.0</a> Passcode: l2t==bp3
+          </p>
+          <h1 class="display-4">Induction</h1>
+          <p class="lead">A mathematical strategy for proving statements about integers
+            (more generally, about sets that can be ordered in some fairly
+            general ways)
+          </p>
+          <p>
+            Induction and recursion are intimately related.
+          </p>
+          <p>
+            Proof by induction is done in two steps.
+            <li>
+              The first step, known as the base case, is to prove the given statement for the first natural number
+            </li>
+            <li>
+              The second step, known as the inductive step, is to prove that the
+              given statement for any one natural number implies the given statement for the next natural number.
+            </li>
+          </p>
+          <p>
+            From these two steps, mathematical induction is the rule from which we infer that the given statement is
+            established for all natural numbers.
+            Mathematical induction, in some form, is the foundation of all correctness proofs for computer programs.
+          </p>
+          <p>
+            Download or copy lecture slides: <a href="https://muele.mak.ac.ug/mod/resource/view.php?id=48970"
+              target="_blank" rel="noopener noreferrer">Lecture 4: Induction</a>
+          </p>
+        </div>
+      </div> -->
+
+      <!-- recurssion induction -->
+
+      <!-- fundamentals of data structures   -->
+      <!-- <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Fundamentals of Data Structures</h1>
+          <p class="lead">The objective of the course is to: Solve problems using data structures such as linear lists,
+            stacks, queues, hash tables,
+            binary trees, heaps, tournament trees, binary search trees, and graphs, and writing programs for these
+            solutions.
+            Solve problems using algorithm design methods such as the greedy method, divide and conquer, dynamic
+            programming, backtracking,
+            and branch and bound and writing programs for these solutions.
+            Develop proficiency in the specification, representation, and implementation of Data Types and Data
+            Structures.</p>
+          <img src="ds-introduction.png" alt="" srcset="">
+          <p>
+            Download or copy lecture slides: <a href="https://muele.mak.ac.ug/mod/resource/view.php?id=46388"
+              target="_blank" rel="noopener noreferrer">Lecture 5: Fundamentals of Data Structures</a>
+          </p>
+          <p>
+            Zoom Recordings:
+          </p>
+          <p>
+            <a href="https://zoom.us/rec/share/Yuf64ew-019S9dQOhpfg1c6MTNQWyNS9eVjUcmW2fkK_t-FXUlI9FMU0t5SbrIdJ.yj0isOenf-EjETh1"
+              target="_blank" rel="noopener noreferrer">
+              Zoom lecture 5.0</a> Passcode: =jTYF21i
+          </p>
+        </div>
+      </div> -->
+      <!-- fundamentals of data structures   -->
+
+      <!-- searching -->
+      <!-- <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Searching</h1>
+          <p class="lead">Searching Algorithms are designed to check for an element or retrieve an element from any
+            data structure where it is stored.
+            Based on the type of search operation, these algorithms are generally classified into two categories:
+            <li>
+              Sequential Search: In this, the list or array is traversed sequentially and every element is checked. For
+              example: <a
+                href="https://en.wikipedia.org/wiki/Linear_search#:~:text=In%20computer%20science%2C%20a%20linear,whole%20list%20has%20been%20searched."
+                target="_blank" rel="noopener noreferrer">Linear search</a>.
+
+            </li>
+            <img src="Linear-Search.png" alt="" srcset="">
+            <li>
+              Interval Search: These algorithms are specifically designed for searching in sorted data-structures.
+              These type of searching algorithms are much more efficient than Linear search
+              as they repeatedly target the center of the search structure and divide the search space in half. For
+              Example: <a
+                href="https://en.wikipedia.org/wiki/Binary_search_algorithm#:~:text=In%20computer%20science%2C%20binary%20search,middle%20element%20of%20the%20array."
+                target="_blank">Binary search</a>.
+            </li>
+            <img src="Binary-Search.png" width="600" alt="" srcset="">
+          </p>
+          <p>
+            Download or copy lecture slides: <a href="https://muele.mak.ac.ug/mod/resource/view.php?id=46828"
+              target="_blank" rel="noopener noreferrer">Lecture 6: Searching</a>
+          </p>
+          <p>
+            Zoom Recordings:
+          </p>
+          <p>
+            <a href="https://zoom.us/rec/share/Fw63LAQwCNKwx8JThhRInb_rnuL_nShmAi3FvZPpnW1tRLjDjctSXSbJyS_xJMPL.c3B6bYRlt_szxJZk"
+              target="_blank" rel="noopener noreferrer">
+              Zoom lecture 6.0</a> Passcode: 6+v70bv^
+          </p>
+        </div>
+      </div> -->
+      <!-- searching -->
+      <!-- sorting -->
+
+      <!-- <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Sorting Algorithms</h1>
+          <p class="lead">Sorting refers to arranging data in a particular format.
+            Sorting algorithm specifies the way to arrange data in a particular order.
+            Most common orders are in numerical or lexicographical order.</p>
+          <p>
+            The importance of sorting lies in the fact that data searching can be optimized to a very high level,
+            if data is stored in a sorted manner.
+            Sorting is also used to represent data in more readable formats. Following are some
+            of the examples of sorting in real-life scenarios
+            <li>
+              Telephone Directory − The telephone directory stores the
+              telephone numbers of people sorted by their names, so that the names can be searched easily.
+            </li>
+            <li>
+              Dictionary − The dictionary stores words in an alphabetical order so that searching of any word becomes
+              easy.
+            </li>
+          </p>
+          <p>
+            Download or copy lecture slides: <a href="https://muele.mak.ac.ug/mod/resource/view.php?id=46871"
+              target="_blank" rel="noopener noreferrer">Lecture 7: Sorting</a>
+          </p>
+          <p>
+            Zoom Recordings:
+          </p>
+          <p>
+            <a href="https://zoom.us/rec/share/lR2QiK5XhBAUGI4MJb_r4-3KJ3TI-nE74Q1bqysBnTtgQs09UQEppFCThdDq8alE.b1zZqqXsT-0bhSk8"
+              target="_blank" rel="noopener noreferrer">
+              Zoom lecture 7.0</a> Passcode: 79qaHi^t
+          </p>
+        </div>
+      </div> -->
+      <!-- sorting -->
+
+      <!-- graphs -->
+      <!-- <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Graphs</h1>
+          <p class="lead">A Graph is a non-linear data structure consisting of nodes and edges.
+             The nodes are sometimes also referred to as vertices and the edges are lines
+             or arcs that connect any two nodes in the graph. More formally a Graph can be defined as,
+             <i>A Graph consists of a finite set of vertices(or nodes) and set of Edges which connect a pair of nodes.</i>
+            </p>
+             <img src="undirectedgraph.png" alt="" srcset="">
+             <p>
+              Download or copy lecture slides: <a href="https://muele.mak.ac.ug/mod/resource/view.php?id=46884"
+                target="_blank" rel="noopener noreferrer">Lecture 7: Sorting</a>
+            </p>
+            <p>
+              Zoom Recordings:
+            </p>
+            <p>
+              <a href="https://zoom.us/rec/share/yPrsByglFLk4-RVgtxBF19gYYA9k5ZC6gYBozaK6-51W6k2A6DT5Ov9cvgbmUw0.8OnC2y-HPfvVDX_V"
+                target="_blank" rel="noopener noreferrer">
+                Zoom lecture 7.0</a> Passcode: uDa$H9L+
+            </p>
+        </div>
+      </div> -->
+      <!-- graphs -->
+      <!-- <div id="textbooks">
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            <h1 class="display-4">Textbooks</h1>
+            <p class="lead">This section provides a list of textbooks to be used in the course</p>
+            <p><a
+                href="http://coltech.vnu.edu.vn/~sonpb/DSA/Data%20Structures%20and%20Algorithms%20in%20Java,%206th%20Edition,%202014.pdf"
+                target="_blank" rel="noopener noreferrer">
+                Data Structures and Algorithms in Java by Michael T. Goodric SIXTH Edition 2014</a></p>
+            <p>
+              <a href="http://www.kitabxana.net/files/books/file/1354098277.pdf" target="_blank"
+                rel="noopener noreferrer">
+                Data Structures and Algorithm Analysis in Java by Mark Allen Weiss Third Edition 2012</a>
+            </p>
+            <p>
+              <a href="https://www.cs.auckland.ac.nz/courses/compsci105ssc/resources/ProblemSolvingwithAlgorithmsandDataStructures.pdf"
+                target="_blank" rel="noopener noreferrer">
+                Problem Solving with Algorithms and Data Structures Release 3.0 by Brad Miller, David Ranum 2013 </a>
+            </p>
+            <p>
+              <a href="https://muele.mak.ac.ug/mod/resource/view.php?id=49385" target="_blank"
+                rel="noopener noreferrer">
+                Data Structures and Algorithms in Java, 6th Edition, 2014.pdf</a>
+            </p>
+            <p>
+              <a href="https://muele.mak.ac.ug/mod/resource/view.php?id=43605" target="_blank"
+                rel="noopener noreferrer">
+                Data-Structures-and-Algorithm-Analysis-in-Java(1).pdf</a>
+            </p>
+            <p>
+              <a href="https://muele.mak.ac.ug/mod/resource/view.php?id=43606" target="_blank"
+                rel="noopener noreferrer">Problem Solving with Algorithms and DataStructures.pdf</a>
+            </p>
+          </div>
+        </div>
+      </div> -->
+      <!-- about us -->
+      <section class="our-webcoderskull padding-lg" id="about-us">
+        <div class="container">
+          <div class="row heading heading-icon">
+            <h2>Our Team</h2>
+          </div>
+          <ul class="row">
+            <li class="col-12 col-md-6 col-lg-3">
+              <div class="cnt-block equal-hight" style="height: 349px;">
+                <figure><img src="http://www.webcoderskull.com/img/team4.png" class="img-responsive" alt=""></figure>
+                <h3><a href="http://www.webcoderskull.com/">Chris</a></h3>
+                <p>Freelance Web Developer</p>
+                <ul class="follow-us clearfix">
+                  <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="col-12 col-md-6 col-lg-3">
+              <div class="cnt-block equal-hight" style="height: 349px;">
+                <figure><img src="http://www.webcoderskull.com/img/team1.png" class="img-responsive" alt=""></figure>
+                <h3><a href="#">Peter </a></h3>
+                <p>Freelance Web Developer</p>
+                <ul class="follow-us clearfix">
+                  <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="col-12 col-md-6 col-lg-3">
+              <div class="cnt-block equal-hight" style="height: 349px;">
+                <figure><img src="https://i.ibb.co/xjL8nBY/female-digital-art.jpg" class="img-responsive" alt="">
+                </figure>
+                <h3><a href="http://www.webcoderskull.com/">Judith Whitney </a></h3>
+                <p>Freelance Web Developer</p>
+                <ul class="follow-us clearfix">
+                  <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                </ul>
+              </div>
+            <li class="col-12 col-md-6 col-lg-3">
+              <div class="cnt-block equal-hight" style="height: 349px;">
+                <figure><img src="http://www.webcoderskull.com/img/team4.png" class="img-responsive" alt=""></figure>
+                <h3><a href="http://www.webcoderskull.com/">Michael </a></h3>
+                <p>Freelance Web Developer</p>
+                <ul class="follow-us clearfix">
+                  <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="col-12 col-md-6 col-lg-3">
+              <div class="cnt-block equal-hight" style="height: 349px;">
+                <figure><img src="https://i.ibb.co/xjL8nBY/female-digital-art.jpg" class="img-responsive" alt="">
+                </figure>
+                <h3><a href="http://www.webcoderskull.com/">Samatha </a></h3>
+                <p>Freelance Web Developer</p>
+                <ul class="follow-us clearfix">
+                  <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- contact -->
+      <div class="container contact-form" id="the-contact-form">
+        <div class="contact-image">
+          <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact" />
+        </div>
+        <form method="post">
+          <h3>Drop Us a Message</h3>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
+              </div>
+              <div class="form-group">
+                <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
+              </div>
+              <div class="form-group">
+                <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" />
+              </div>
+              <div class="form-group">
+                <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <textarea name="txtMsg" class="form-control" placeholder="Your Message *"
+                  style="width: 100%; height: 150px;"></textarea>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+
+      <!-- footer -->
+      <div class="container-fluid pb-0 mb-0 justify-content-center text-light ">
+        <footer>
+          <div class="row my-5 justify-content-center py-5">
+            <div class="col-11">
+              <div class="row ">
+                <div class="col-xl-8 col-md-4 col-sm-4 col-12 my-auto mx-auto a">
+                  <h3 class="text-muted mb-md-0 mb-5 bold-text">Destination.</h3>
+                </div>
+                <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                  <h6 class="mb-3 mb-lg-4 bold-text "><b>MENU</b></h6>
+                  <ul class="list-unstyled">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Blog</li>
+                    <li>Portfolio</li>
+                  </ul>
+                </div>
+                <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                  <h6 class="mb-3 mb-lg-4 text-muted bold-text mt-sm-0 mt-5"><b>ADDRESS</b></h6>
+                  <p class="mb-1">605, RATAN ICON BUILDING</p>
+                  <p>SEAWOODS SECTOR</p>
+                </div>
+              </div>
+              <div class="row ">
+                <div class="col-xl-8 col-md-4 col-sm-4 col-auto my-md-0 mt-5 order-sm-1 order-3 align-self-end">
+                  <p class="social text-muted mb-0 pb-0 bold-text"> <span class="mx-2"><i class="fa fa-facebook"
+                        aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-linkedin-square"
+                        aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-twitter"
+                        aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-instagram"
+                        aria-hidden="true"></i></span> </p><small class="rights"><span>&#174;</span> Destination All
+                    Rights Reserved.</small>
+                </div>
+                <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-1 align-self-end ">
+                  <h6 class="mt-55 mt-2 text-muted bold-text"><b>ANIRUDH SINGLA</b></h6><small> <span><i
+                        class="fa fa-envelope" aria-hidden="true"></i></span> anirudh@gmail.com</small>
+                </div>
+                <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-2 align-self-end mt-3 ">
+                  <h6 class="text-muted bold-text"><b>RISHABH SHEKHAR</b></h6><small><span><i class="fa fa-envelope"
+                        aria-hidden="true"></i></span> rishab@gmail.com</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+
+    <script>
+      function getInfo() {
+        var email = document.getElementById('email-name').value
+        var password = document.getElementById('password-name').value
+        var login = document.getElementById('login')
+
+        if (email === 'admin' && password === 'admin') {
+          login.href = "admin.html";
+          console.log("ha")
+        } else {
+          login.href = "userPage1.html"
+        }
+
+      }
+    </script>
+</body>
+<!-- Ajuna Balinda Christopher 1900716072 19/U/16072/EVE
+Luwero Peter 1900716820 19/U/16820/EVE
+Karungi Cynthia Samantha 1900716548 19/U/16548/EVE
+Nanvuma Whitney Judith 1900701186 19/U/1186
+Nkono Michael 1900717684 19/U/17684 /EVE -->
+
+</html>

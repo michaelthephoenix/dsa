@@ -1,0 +1,34 @@
+#footer {
+    margin-top: auto;
+}
+
+.jumbotron {
+    margin-bottom: 0px!;
+}
+
+#textbooks {
+    margin-top: 2rem;
+    margin-bottom: -2rem;
+}
+
+#alg-analysis {
+    margin-bottom: -2rem;
+}
+
+#recursion {
+    margin-bottom: -2rem;
+}
+#fundamentals {
+    margin-bottom: -2rem; 
+}
+
+#searching {
+    margin-bottom: -2rem;
+}
+#sorting {
+    margin-bottom: -2rem;
+}
+#graphs {
+    margin-top: 2rem;
+    margin-bottom: -2rem;
+}
